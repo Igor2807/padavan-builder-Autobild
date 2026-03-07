@@ -326,7 +326,11 @@ else
 		cexec git -C padavan-ng pull;
 	fi
 fi
+echo "Adding board profile for KN-START..."
 
+mkdir -p padavan-ng/trunk/configs/boards/ZYXEL/KN-START
+cp -r padavan-ng/trunk/configs/boards/DLINK/DIR-300B7/* \
+      padavan-ng/trunk/configs/boards/ZYXEL/KN-START/
 if [[ ! -d "padavan-ng/toolchain/out" ]]; then
 	echo "Downloading and extracting toolchain...";
 	if [[ ! -f "toolchain.tzst" ]]; then
