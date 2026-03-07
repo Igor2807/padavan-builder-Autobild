@@ -13,9 +13,7 @@ container='';
 select_input='';
 select_list=();
 select_index=0;
-mkdir -p padavan-ng/trunk/configs/boards/ZYXEL/KN-START
-cp -r padavan-ng/trunk/configs/boards/DLINK/DIR-300B7/* \
-      padavan-ng/trunk/configs/boards/ZYXEL/KN-START/
+
 
 handle_exit() {
 	if [[ -n "${container}" ]]; then
